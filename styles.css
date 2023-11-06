@@ -1,0 +1,57 @@
+body {
+    background-color : #F5F5F5
+}.container {
+    background-color : #F5F5F5;
+    box-shadow : rgba(105, 90, 68, 0.2)0px 7px 29px 0px;
+}.todoCon , NotesCon{
+    background-color : #F5F5F5;
+    box-shadow : rgba(105, 90, 68, 0.2)0px 7px 29px 0px;
+}.strike {
+
+    text-decoration : line-through grey;
+}
+
+
+label:hover {
+
+    cursor:pointer;
+}
+
+
+label {
+
+    margin : .5rem;
+}.addBtn {
+
+    border-radius: 100%;
+}.deleteBtn {
+
+
+    width : 45px;
+    height : 45px;
+}.taskMsg {
+
+    background-color : #ffffff00;
+    color: black;
+    font-size : 2rem;
+    border-bottom : orange 2px solid;
+}.taskMsg:focus {
+
+    outline: none;
+
+    border-bottom : orange 4px dashed;
+
+}.checkbox {
+
+
+    border-radius : 100%;
+}.taskDiv {
+    transition : all .2s ease;
+
+    display: flex;
+    justify-content: space-between;
+}
+.deleteAllBtn{
+
+    border-radius: 100%;
+}
