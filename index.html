@@ -13,22 +13,23 @@
     <div class="main w-[100vw] h-[100vh] flex justify-center items-center">
 
 
-        <div class="container w-[85%] h-[85%] rounded-lg flex justify-center items-center rounded-lg p-3 gap-5">
+        <div
+            class="container w-[98%] h-[90%] lg:w-[85%] lg:h-[85%] rounded-lg flex lg:flex-row flex-col justify-center items-center rounded-lg p-3 gap-5">
 
 
-            <div class="todoCon w-[48%] h-[100%] p-5  rounded-lg flex flex-col gap-[3rem]">
+            <div class="todoCon w-[98%] h-[48%] lg:w-[48%] lg:h-[100%] p-5  rounded-lg flex flex-col gap-[3rem]">
 
 
                 <div class="serachCon flex justify-center items-center gap-5"><input
-                        class="taskMsg  flex justify-center items-center text-center " type="text"
-                        placeholder="Add a new task"> <button
-                        class="addBtn w-[45px] h-[45px] text-[1.25rem] bg-[orange]">+</button>
-                    <button class="deleteAllBtn w-[45px] h-[45px] text-[1.25rem] bg-[red]">-</button>
+                        class="taskMsg w-[70%] text-[1.3rem] md:text-[2rem] lg:text-[2rem]  flex justify-center items-center text-center "
+                        type="text" placeholder="Add a new task"> <button
+                        class="addBtn w-[30px] h-[30px] lg:w-[45px] lg:h-[45px] text-[1.25rem] bg-[black] "><img src="add.svg" alt=""></button>
+                    <button
+                        class="deleteAllBtn w-[30px] h-[30px] lg:w-[45px] lg:h-[45px] text-[1.25rem]"><img src="delte.svg" alt=""></button>
                 </div>
 
 
                 <div class="listCon flex flex-col gap-3 text-[1.35rem] ">
-
 
 
                 </div>
@@ -41,7 +42,28 @@
 
 
 
-            <div class="NotesCon todoCon w-[48%] h-[100%] p-5  rounded-lg flex flex-col gap-[3rem]">
+            <div
+                class="NotesCon todoCon w-[98%] h-[48%] lg:w-[48%] lg:h-[100%] p-5  rounded-lg block justify-center items-center  gap-[1rem]">
+
+
+                <div class="flex justify-between h-[fit]  w-[fit]">
+                    <h1 class="text-[1.3rem] md:text-[2rem] lg:text-[3rem] nh1">Notes...</h1>
+                    <div class="h-[fit] w-[fit] flex gap-5">
+
+                        <button class="noteAddBtn w-[30px] h-[30px] lg:w-[45px] lg:h-[45px] bg-[black]"><img class="noteAddBtn" src="add.svg" alt=""></button>
+                        <button class="noteDeleteAllBtn w-[30px] h-[30px] lg:w-[45px] lg:h-[45px] "><img class="noteDeleteAllBtn" src="delte.svg" alt=""></button>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,6 +5,7 @@ let classno = 0
 let idno = 0
 let ar = []
 let deleteBtnno = 0
+let no =0
 function addNew() {
 
 
@@ -41,12 +42,10 @@ function addNew() {
         subunqDiv.className = `subDiv${classno}`
 
         document.querySelector(`.${unqDiv}`).append(subunqDiv)
-        document.querySelector(`.${
-            subunqDiv.className
-        }`).append(input)
-        document.querySelector(`.${
-            subunqDiv.className
-        }`).append(label)
+        document.querySelector(`.${subunqDiv.className
+            }`).append(input)
+        document.querySelector(`.${subunqDiv.className
+            }`).append(label)
 
         document.querySelector(`.${unqDiv}`).append(deleteBtn)
 
@@ -54,9 +53,9 @@ function addNew() {
         // Add event listener to the delete button
 
 
-        ++ deleteBtnno;
-        ++ classno;
-        ++ idno;
+        ++deleteBtnno;
+        ++classno;
+        ++idno;
 
 
     } else {
@@ -68,12 +67,12 @@ function addNew() {
 document.querySelector('.listCon').addEventListener('click', removeTask)
 
 function removeTask(e) {
-    for (i = 0; i <= ar.length; i ++) 
+    for (i = 0; i <= ar.length; i++)
         if (e.target.classList.contains(`dBtn${i}`)) {
             document.querySelector(`.div${i}`).remove()
 
         }
-    
+
 
 
 }
@@ -98,5 +97,65 @@ function deleteAll() {
         element.remove()
     });
 
+
+}
+
+
+document.querySelector('.noteAddBtn').addEventListener('click', noteCreate)
+
+
+function noteCreate() {
+
+    let notesDiv = document.createElement('div')
+    let note = document.createElement('textarea')
+    let dBtn = document.createElement('img')
+    let parent = document.querySelector('.NotesCon')
+
+
+    notesDiv.classList.add('notesDiv', `noteDiv${no}`)
+
+    
+
+    note.setAttribute('class', 'note')
+dBtn.src = 'cross.svg'
+    dBtn.classList.add('noteDbtn', `noteDbtn${no}`)
+
+    parent.append(notesDiv)
+    notesDiv.append(note)
+    notesDiv.append(dBtn)
+
+    no++
+
+
+
+
+}
+
+
+document.querySelector('.noteDeleteAllBtn').addEventListener('click', noteDeleteAll)
+
+
+function noteDeleteAll() {
+
+    let parent = document.querySelectorAll('.notesDiv')
+
+
+
+    parent.forEach(element => {
+
+        element.remove()
+    });
+}
+
+document.querySelector('.NotesCon').addEventListener('click', removeNote)
+
+function removeNote(e) {
+    for (let i = 0; i <= no; i++)
+        if (e.target.classList.contains(`noteDbtn${i}`)) {
+
+            if(document.querySelector(`.noteDiv${i}`)){
+            document.querySelector(`.noteDiv${i}`).remove()}
+
+        }
 
 }
