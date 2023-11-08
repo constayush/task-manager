@@ -1,57 +1,156 @@
 body {
-    background-color : #F5F5F5
-}.container {
-    background-color : #F5F5F5;
-    box-shadow : rgba(105, 90, 68, 0.2)0px 7px 29px 0px;
-}.todoCon , NotesCon{
-    background-color : #F5F5F5;
-    box-shadow : rgba(105, 90, 68, 0.2)0px 7px 29px 0px;
-}.strike {
+    background-color: #ffffff
+}
 
-    text-decoration : line-through grey;
+.container {
+    background-color: #F5F5F5;
+    box-shadow: rgba(105, 90, 68, 0.2)0px 7px 29px 0px;
+}
+
+.todoCon,
+NotesCon {
+    background-color: #F5F5F5;
+    box-shadow: rgba(105, 90, 68, 0.2)0px 7px 29px 0px;
+}
+
+.strike {
+
+    text-decoration: line-through grey;
 }
 
 
 label:hover {
 
-    cursor:pointer;
+    cursor: pointer;
 }
 
 
 label {
 
-    margin : .5rem;
-}.addBtn {
+    margin: .5rem;
+}
+
+.addBtn {
 
     border-radius: 100%;
-}.deleteBtn {
+}
+
+.deleteBtn {
 
 
-    width : 45px;
-    height : 45px;
-}.taskMsg {
+    width: 45px;
+    height: 45px;
+}
 
-    background-color : #ffffff00;
+.taskMsg {
+
+    background-color: #ffffff00;
     color: black;
-    font-size : 2rem;
-    border-bottom : orange 2px solid;
-}.taskMsg:focus {
+
+    border-bottom: orange 2px solid;
+}
+
+.taskMsg:focus {
 
     outline: none;
 
-    border-bottom : orange 4px dashed;
+    border-bottom: orange 4px dashed;
 
-}.checkbox {
+}
+
+.checkbox {
 
 
-    border-radius : 100%;
-}.taskDiv {
-    transition : all .2s ease;
+    border-radius: 100%;
+}
+
+.taskDiv {
+    transition: all .2s ease;
 
     display: flex;
     justify-content: space-between;
 }
-.deleteAllBtn{
+
+.deleteAllBtn {
 
     border-radius: 100%;
+}
+
+.todoCon {
+
+    overflow-y: scroll;
+}
+
+
+.note {
+
+    background-color: #ffffff00;
+    box-shadow: rgba(63, 57, 47, 0.2)0px 7px 29px 0px;
+    overflow-y: visible;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+}
+
+
+.NotesCon {
+
+    overflow-y: auto;
+}
+
+.notesDiv {
+    background-color: #ffffff00;
+    width: 80%;
+    height: 38%;
+    font-size: 1.9rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 2.2rem;
+
+}
+
+
+.deleteNoteBtn {
+    background-color: aqua;
+    display: block;
+    width: 10%;
+    height: 30px;
+}
+
+
+.noteAddBtn {
+    border-radius: 100%;
+}
+
+.noteDeleteAllBtn {
+    border-radius: 100%;
+}
+
+
+.note:focus {
+
+    outline: none;
+transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+.note{
+
+    transition: all .3s ease;
+}
+
+
+.nh1{
+
+    color: rgba(0, 0, 0, 0.575);
+}
+.noteDbtn{
+  width: 30px ;
+  height: 30px;
+display: block;
+margin: .5rem auto;
 }
